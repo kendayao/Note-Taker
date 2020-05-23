@@ -22,12 +22,15 @@ app.get("/",function(req, res){
     });
 
 app.get("/api/notes",function(req, res){
-   
-      
+
       fs.readFile(__dirname + "/db/db.json", "utf8", (err, data) => {
         if (err) throw err;
         console.log(data)
         res.json(data)
       });
      
+});
+
+app.post("/api/notes", function(req,res){
+    
 });
