@@ -44,8 +44,9 @@ app.post("/api/notes", function(req,res){
 savedNotes.push(newNote)
 fs.writeFile("./db/db.json",JSON.stringify(savedNotes), (err) =>{
     if (err) throw err;
-    console.log("file saved")
+    
 });
+res.json(newNote)
 });
 
 var savedNotes=[];
