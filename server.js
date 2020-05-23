@@ -37,16 +37,30 @@ res.sendFile(__dirname + "/public/index.html")
 
 
 
-app.post("/api/notes", function(req,res){
+app.delete("/api/notes/:id", function(req,res){
+    var id1 = req.params.id;
+    console.log(id1)
+});
 
-     var newNote=req.body
-     
-savedNotes.push(newNote)
+
+app.post("/api/notes", function(req,res){
+  var newNote=req.body
+  
+    var id = 0
+    newNote.id=id
+
+    savedNotes.push(newNote)
+
+var counter = 1
+for (var i=0; i < savedNotes.length; i++){
+    savedNotes[i].id = counter++;
+}
+
+
 fs.writeFile("./db/db.json",JSON.stringify(savedNotes), (err) =>{
-    if (err) throw err;
-    
+    if (err) throw err;   
 });
 res.json(newNote)
 });
-
+var savedNoteswithid=[];
 var savedNotes=[];
