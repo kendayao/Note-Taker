@@ -21,14 +21,17 @@ res.sendFile(__dirname + "/public/notes.html")
 
 
 app.get("/api/notes",function(req, res){
-
-    //   fs.readFile(__dirname + "/db/db.json", "utf8", (err, data) => {
-    //     if (err) throw err;
+   
+  
+      fs.readFile(__dirname + "/db/db.json", "utf8", (err, notes) => {
+        if (err) throw err;
+        var parseData= JSON.parse(notes)
+        return res.json(parseData)
         
-    //     res.json(data)
+      });
       });
       
-app.get("*",function(req, res){
+app.get("/",function(req, res){
 res.sendFile(__dirname + "/public/index.html")
 });
 
