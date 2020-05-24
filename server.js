@@ -31,7 +31,7 @@ app.get("/api/notes",function(req, res){
       });
       });
       
-app.get("/",function(req, res){
+app.get("*",function(req, res){
 res.sendFile(__dirname + "/public/index.html")
 });
 
@@ -58,7 +58,7 @@ app.delete("/api/notes/:id", function(req,res){
             if (err) throw err;   
             
         });
-        res.send("something")
+        res.send(savedNotes)
     });
 
 
@@ -83,7 +83,7 @@ for (var i=0; i < savedNotes.length; i++){
 fs.writeFile(__dirname + "/db/db.json",JSON.stringify(savedNotes), (err) =>{
     if (err) throw err;   
 });
-res.send("something")
+res.send(savedNotes)
 });
 
 

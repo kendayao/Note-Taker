@@ -37,7 +37,7 @@ No installation needed. Once you click the deployed application link, it is read
 ## Usage
 
 
-The deployed application link will take you to the homepage. Click on get started to begin typing you notes.
+The deployed application link will take you to the homepage. Click on get started to begin typing you notes. To begin writing your note, click on Note title to write the title of your note and then click on note text to write the contents of your note. Click on the save icon to save your note on the left side of the application. You can click on any saved note to edit the note and you can click on the delete icon in order to delete the note.
 
 
 ## License
@@ -59,7 +59,8 @@ No tests to run.
 
 
 ## Questions
-![](https://avatars3.githubusercontent.com/u/62568395?v=4)
+
+<img src="https://avatars3.githubusercontent.com/u/62568395?v=4" width="100" height="100">
 
 For any questions, please contact kendayao at kendayao@gmail.com
 
