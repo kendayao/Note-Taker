@@ -38,18 +38,41 @@ res.sendFile(__dirname + "/public/index.html")
 
 
 app.delete("/api/notes/:id", function(req,res){
-    var id1 = req.params.id;
-    console.log(id1)
+    var noteId = req.params.id;
+    
+    
+    
+
+    fs.readFile(__dirname + "/db/db.json", "utf8", (err, notes) => {
+        if (err) throw err;
+
+        var parseData= JSON.parse(notes)
+        
+        savedNotes=parseData.filter(function(num){
+            
+            return num.id!=noteId;
+            
+        });
+        
+        fs.writeFile(__dirname + "/db/db.json",JSON.stringify(savedNotes), (err) =>{
+            if (err) throw err;   
+            
+        });
+        res.send("something")
+    });
+
+
+
 });
 
-
+var savedNotes=[];
 app.post("/api/notes", function(req,res){
+   
   var newNote=req.body
-  
-    var id = 0
+ 
+    var id = 1
     newNote.id=id
-
-    savedNotes.push(newNote)
+savedNotes.push(newNote)
 
 var counter = 1
 for (var i=0; i < savedNotes.length; i++){
@@ -57,10 +80,10 @@ for (var i=0; i < savedNotes.length; i++){
 }
 
 
-fs.writeFile("./db/db.json",JSON.stringify(savedNotes), (err) =>{
+fs.writeFile(__dirname + "/db/db.json",JSON.stringify(savedNotes), (err) =>{
     if (err) throw err;   
 });
-res.json(newNote)
+res.send("something")
 });
-var savedNoteswithid=[];
-var savedNotes=[];
+
+
