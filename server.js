@@ -29,7 +29,7 @@ app.get("/api/notes",function(req, res){
 });
      
 //displays note take homepage
-app.get("*",function(req, res){
+app.get("/",function(req, res){
     res.sendFile(__dirname + "/public/index.html")
 });
 
