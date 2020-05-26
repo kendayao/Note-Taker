@@ -65,6 +65,8 @@ For any questions, please contact kendayao at kendayao@gmail.com
 
 ## Deployed Application URL
 
+Link to deployed application: https://fierce-bayou-31752.herokuapp.com/
+
 <img src="public/assets/images/notetakerapp.png" width="600" height="300">
 
-None
+
