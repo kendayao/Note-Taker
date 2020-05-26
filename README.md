@@ -36,7 +36,7 @@ No installation needed. Once you click the deployed application link, it is read
 ## Usage
 
 
-The deployed application link will take you to the homepage. Click on get started to begin typing your notes. To begin writing your note, click on Note title to write the title of your note and then click on note text to write the contents of your note. Click on the save icon to save your note on the left side of the application. You can click on the delete icon in order to delete the note. Lastly, to view the note, you can click on any saved note to view the note and then click on the pencil icon to write a new note.
+The deployed application link will take you to the homepage. Click on get started to begin. To begin writing your note, click on note title to write the title of your note and then click on the note text to write the contents of your note. Click on the save icon to save your note on the left side of the application. You can click on the delete icon in order to delete the note. Lastly, to view the note, you can click on any saved note to view the note and then click on the pencil icon to write a new note.
 
 
 ## License
