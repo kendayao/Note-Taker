@@ -4,12 +4,13 @@
 ## Description
 
 
-This is a note writing application. This application is used to write, save, and delete notes. It uses an express backend to save and retreive information from a JSON file.
+Note-Taker is a note taking web application. This application allows users to write, save, and delete notes. 
 
 
 ## Table of Contents
 
 * [Description](#description)
+* [Technology](#technology)
 * [User Story](#user-story)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -19,6 +20,14 @@ This is a note writing application. This application is used to write, save, and
 * [Questions](#questions)
 * [Deployed Application URL](#deployed-application-URL)
 
+## Technology
+
+- HTML 
+- CSS
+- JavaScript
+- jQuery
+- Node
+- Express
 
 
 ## User Story
@@ -36,7 +45,13 @@ No installation needed. Once you click the deployed application link, it is read
 ## Usage
 
 
-The deployed application link will take you to the homepage. Click on get started to begin. To begin writing your note, click on note title to write the title of your note and then click on the note text to write the contents of your note. Click on the save icon to save your note on the left side of the application. You can click on the delete icon in order to delete the note. Lastly, to view the note, you can click on any saved note to view the note and then click on the pencil icon to write a new note.
+The deployed application link will take you to the homepage. 
+
+- Click on get started to begin. 
+- To begin writing your note, click on note title to write the title of your note and then click on the note text to write the contents of your note. 
+- Click on the save icon to save your note on the left side of the application. 
+- You can click on the delete icon in order to delete the note. 
+- Lastly, to view the note, you can click on any saved note to view the note and then click on the pencil icon to write a new note.
 
 
 ## License
@@ -66,6 +81,8 @@ For any questions, please contact kendayao at kendayao@gmail.com
 ## Deployed Application URL
 
 Link to deployed application: https://fierce-bayou-31752.herokuapp.com/
+
+Video demo link: https://giphy.com/gifs/IgiZhvklWlFFVVcIO9/fullscreen
 
 <img src="public/assets/images/notetakerapp.png" width="600" height="300">
 
